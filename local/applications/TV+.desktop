@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=TV+
+Comment=Turkcell TV+
+Keywords=Turkcell;TV+;tvplus;
+Exec=omarchy-launch-webapp "https://tvplus.com.tr"
+Terminal=false
+Type=Application
+Icon=tv
+StartupNotify=true
+StartupWMClass=chrome-tvplus.com.tr__-Default

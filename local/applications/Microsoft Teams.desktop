@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft Teams
+Comment=Microsoft Teams
+Exec=omarchy-launch-webapp "https://teams.cloud.microsoft/"
+Terminal=false
+Type=Application
+Icon=microsoft-teams
+StartupNotify=true
+StartupWMClass=chrome-teams.cloud.microsoft__-Default

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft Outlook
+Comment=Microsoft Outlook
+Exec=omarchy-launch-webapp "https://outlook.office.com/mail/"
+Terminal=false
+Type=Application
+Icon=microsoft-outlook
+StartupNotify=true
+StartupWMClass=chrome-outlook.office.com__mail_-Default

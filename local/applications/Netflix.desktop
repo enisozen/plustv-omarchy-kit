@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Netflix
+Comment=Netflix Dizi ve Film Platformu
+Keywords=Netflix;nextflix;dizi;film;video;
+Exec=omarchy-launch-webapp "https://www.netflix.com"
+Terminal=false
+Type=Application
+Icon=netflix
+StartupNotify=true
+StartupWMClass=chrome-www.netflix.com__-Default

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Plus TV
+Name[tr]=Plus TV
+Name[da]=Plus TV
+Comment=Smart TV & Media Hub Launcher
+Comment[tr]=Akıllı TV ve Medya Merkezi Uygulaması
+Comment[da]=Smart-tv og mediecenter
+Exec=/home/enisozen/.local/bin/plustv
+Icon=plustv
+Terminal=false
+Categories=AudioVideo;Video;TV;
+StartupWMClass=plustv

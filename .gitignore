@@ -1,0 +1,12 @@
+# Temporary files
+*.o
+*.moc
+moc_*.cpp
+qrc_*.cpp
+*.bak*
+*.tmp
+*~
+
+# Archives
+*.tar.gz
+*.zip

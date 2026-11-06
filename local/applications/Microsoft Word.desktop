@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft Word
+Comment=Microsoft Word
+Exec=omarchy-launch-webapp "https://word.cloud.microsoft/"
+Terminal=false
+Type=Application
+Icon=microsoft-word
+StartupNotify=true
+StartupWMClass=chrome-word.cloud.microsoft__-Default

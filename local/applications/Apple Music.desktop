@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Apple Music
+Comment=Apple Music Müzik Platformu
+Keywords=Apple;Apple Music;applemusic;music;müzik;şarkı;
+Exec=omarchy-launch-webapp "https://music.apple.com"
+Terminal=false
+Type=Application
+Icon=apple-music
+StartupNotify=true
+StartupWMClass=chrome-music.apple.com__-Default

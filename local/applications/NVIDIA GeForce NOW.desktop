@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=NVIDIA GeForce NOW
+Comment=NVIDIA GeForce NOW Bulut Oyun Platformu
+Keywords=NVIDIA;GeForce;NOW;GFN;Oyun;Game;
+Exec=omarchy-launch-webapp "https://play.geforcenow.com" --disable-gpu
+Terminal=false
+Type=Application
+Categories=Game;Network;
+Icon=nvidia-geforce-now
+StartupNotify=true
+StartupWMClass=chrome-play.geforcenow.com__-Default

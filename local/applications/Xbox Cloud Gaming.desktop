@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Xbox Cloud Gaming
+Comment=Xbox Cloud Gaming
+Exec=omarchy-launch-webapp "https://www.xbox.com/en-US/play"
+Terminal=false
+Type=Application
+Icon=xbox-cloud-gaming
+StartupNotify=true
+StartupWMClass=chrome-www.xbox.com__en-US_play-Default

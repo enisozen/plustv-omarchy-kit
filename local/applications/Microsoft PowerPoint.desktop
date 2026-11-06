@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft PowerPoint
+Comment=Microsoft PowerPoint
+Exec=omarchy-launch-webapp "https://powerpoint.cloud.microsoft/"
+Terminal=false
+Type=Application
+Icon=microsoft-powerpoint
+StartupNotify=true
+StartupWMClass=chrome-powerpoint.cloud.microsoft__-Default

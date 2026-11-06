@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Apple TV
+Comment=Apple TV+ Dizi ve Film Platformu
+Keywords=Apple;Apple TV;Apple TV+;appletv;dizi;film;video;
+Exec=omarchy-launch-webapp "https://tv.apple.com"
+Terminal=false
+Type=Application
+Icon=apple-tv
+StartupNotify=true
+StartupWMClass=chrome-tv.apple.com__-Default

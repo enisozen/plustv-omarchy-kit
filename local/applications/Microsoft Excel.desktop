@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft Excel
+Comment=Microsoft Excel
+Exec=omarchy-launch-webapp "https://excel.cloud.microsoft/"
+Terminal=false
+Type=Application
+Icon=microsoft-excel
+StartupNotify=true
+StartupWMClass=chrome-excel.cloud.microsoft__-Default

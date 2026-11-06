@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=HEY
+Exec=omarchy-webapp-handler-hey %u
+Terminal=false
+Type=Application
+Icon=hey
+StartupNotify=true
+MimeType=x-scheme-handler/mailto
+StartupWMClass=chrome-app.hey.com__-Default

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051b11"/>
+      <stop offset="55%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#1db954"/>
+    </linearGradient>
+    <radialGradient id="spotGlow" cx="0.78" cy="0.28" r="0.58">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#spotGlow)"/>
+  <circle cx="515" cy="125" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.11" stroke-width="18"/>
+  <circle cx="515" cy="125" r="90" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="8"/>
+  <!-- Spotify Sound Waves Badge -->
+  <g transform="translate(52, 60)">
+    <rect x="0" y="0" width="90" height="90" rx="24" fill="#1db954" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <path d="M22 34 C38 28, 56 30, 68 37" fill="none" stroke="#051b11" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M26 48 C39 43, 53 45, 64 51" fill="none" stroke="#051b11" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M30 61 C40 57, 51 59, 60 63" fill="none" stroke="#051b11" stroke-width="5.5" stroke-linecap="round"/>
+  </g>
+  <text x="52" y="196" fill="#ffffff" font-family="Sans" font-weight="900" font-size="52" letter-spacing="1">Spotify</text>
+  <text x="54" y="226" fill="#bbf7d0" font-family="Sans" font-weight="bold" font-size="18" letter-spacing="3">MÜZİK • PODCAST • CANLI LİSTELER</text>
+  <rect x="54" y="244" width="190" height="6" rx="3" fill="#ffffff"/>
+</svg>

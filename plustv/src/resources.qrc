@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="Main.qml">Main.qml</file>
+        <file alias="i18n/en.json">i18n/en.json</file>
+        <file alias="i18n/tr.json">i18n/tr.json</file>
+        <file alias="i18n/da.json">i18n/da.json</file>
+        <file alias="covers/bein-connect.svg">covers/bein-connect.svg</file>
+        <file alias="covers/digiturk.svg">covers/digiturk.svg</file>
+        <file alias="covers/tvplus.svg">covers/tvplus.svg</file>
+        <file alias="covers/apple-tv.svg">covers/apple-tv.svg</file>
+        <file alias="covers/prime-video.svg">covers/prime-video.svg</file>
+        <file alias="covers/netflix.svg">covers/netflix.svg</file>
+        <file alias="covers/youtube.svg">covers/youtube.svg</file>
+        <file alias="covers/chrome.svg">covers/chrome.svg</file>
+        <file alias="covers/apple-music.svg">covers/apple-music.svg</file>
+        <file alias="covers/spotify.svg">covers/spotify.svg</file>
+        <file alias="covers/youtube-music.svg">covers/youtube-music.svg</file>
+        <file alias="covers/geforce-now.svg">covers/geforce-now.svg</file>
+    </qresource>
+</RCC>

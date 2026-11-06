@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071204"/>
+      <stop offset="55%" stop-color="#143606"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </linearGradient>
+    <radialGradient id="gfnGlow" cx="0.78" cy="0.28" r="0.6">
+      <stop offset="0%" stop-color="#76b900" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#76b900" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#gfnGlow)"/>
+  <circle cx="515" cy="125" r="140" fill="none" stroke="#76b900" stroke-opacity="0.22" stroke-width="18"/>
+  <!-- NVIDIA GFN Badge -->
+  <g transform="translate(52, 60)">
+    <rect x="0" y="0" width="90" height="90" rx="22" fill="#76b900"/>
+    <path d="M20 45 Q45 18 70 45 Q45 72 20 45 Z" fill="none" stroke="#071204" stroke-width="7"/>
+    <circle cx="45" cy="45" r="10" fill="#071204"/>
+  </g>
+  <text x="52" y="196" fill="#ffffff" font-family="Sans" font-weight="900" font-size="48" letter-spacing="1">GeForce NOW</text>
+  <text x="54" y="226" fill="#d9f99d" font-family="Sans" font-weight="bold" font-size="18" letter-spacing="3">NVIDIA RTX • BULUT OYUN PLATFORMU</text>
+  <rect x="54" y="244" width="210" height="6" rx="3" fill="#76b900"/>
+</svg>

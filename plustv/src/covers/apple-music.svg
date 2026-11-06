@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2e0519"/>
+      <stop offset="50%" stop-color="#831843"/>
+      <stop offset="100%" stop-color="#fa233b"/>
+    </linearGradient>
+    <radialGradient id="musicGlow" cx="0.78" cy="0.28" r="0.58">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#musicGlow)"/>
+  <circle cx="515" cy="125" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="18"/>
+  <circle cx="515" cy="125" r="90" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="8"/>
+  <!-- Music Note Tile -->
+  <g transform="translate(52, 60)">
+    <rect x="0" y="0" width="90" height="90" rx="24" fill="#fa233b" stroke="#ffffff" stroke-opacity="0.3" stroke-width="2"/>
+    <path d="M36 62 V26 L64 20 V56" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="30" cy="62" r="8" fill="#ffffff"/>
+    <circle cx="58" cy="56" r="8" fill="#ffffff"/>
+  </g>
+  <text x="52" y="196" fill="#ffffff" font-family="Sans" font-weight="900" font-size="50" letter-spacing="1">Apple Music</text>
+  <text x="54" y="226" fill="#fecdd3" font-family="Sans" font-weight="bold" font-size="18" letter-spacing="3">LOSSLESS AUDIO • DOLBY ATMOS</text>
+  <rect x="54" y="244" width="190" height="6" rx="3" fill="#ffffff"/>
+</svg>

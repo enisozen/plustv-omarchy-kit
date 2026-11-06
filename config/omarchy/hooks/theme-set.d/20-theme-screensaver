@@ -1,0 +1,16 @@
+#!/bin/bash
+# Sync theme-specific screensaver branding when switching themes
+set -u
+
+THEME_SLUG="${1:-}"
+CURRENT_THEME_SCREENSAVER="$HOME/.local/state/omarchy/current/theme/screensaver.txt"
+USER_THEME_SCREENSAVER="$HOME/.config/omarchy/themes/$THEME_SLUG/screensaver.txt"
+TARGET="$HOME/.config/omarchy/branding/screensaver.txt"
+
+if [[ -f "$CURRENT_THEME_SCREENSAVER" ]]; then
+  mkdir -p "${TARGET%/*}"
+  cp "$CURRENT_THEME_SCREENSAVER" "$TARGET"
+elif [[ -n "$THEME_SLUG" && -f "$USER_THEME_SCREENSAVER" ]]; then
+  mkdir -p "${TARGET%/*}"
+  cp "$USER_THEME_SCREENSAVER" "$TARGET"
+fi

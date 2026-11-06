@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Amazon Prime Video
+Comment=Amazon Prime Video Dizi ve Film Platformu
+Keywords=Amazon;Amazon Video;amazonv;Prime Video;dizi;film;video;
+Exec=omarchy-launch-webapp "https://www.primevideo.com"
+Terminal=false
+Type=Application
+Icon=amazon-prime-video
+StartupNotify=true
+StartupWMClass=chrome-www.primevideo.com__-Default

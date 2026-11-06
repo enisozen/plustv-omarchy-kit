@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Spotify
+Comment=Spotify Müzik ve Podcast Platformu
+Keywords=Spotify;spotify;music;müzik;şarkı;podcast;
+Exec=omarchy-launch-webapp "https://open.spotify.com/"
+Terminal=false
+Type=Application
+Categories=AudioVideo;Audio;Music;Player;
+Icon=spotify
+StartupNotify=true
+StartupWMClass=chrome-open.spotify.com__-Default

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120307"/>
+      <stop offset="55%" stop-color="#3a0511"/>
+      <stop offset="100%" stop-color="#99001b"/>
+    </linearGradient>
+    <radialGradient id="ytGlow" cx="0.78" cy="0.3" r="0.58">
+      <stop offset="0%" stop-color="#ff0033" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff0033" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#ytGlow)"/>
+  <circle cx="515" cy="120" r="135" fill="none" stroke="#ff0033" stroke-opacity="0.2" stroke-width="18"/>
+  <polygon points="495,82 495,158 558,120" fill="#ffffff" fill-opacity="0.14"/>
+  <!-- Left YouTube Play Button -->
+  <g transform="translate(52, 64)">
+    <rect x="0" y="0" width="116" height="82" rx="22" fill="#ff0033"/>
+    <polygon points="44,21 44,61 80,41" fill="#ffffff"/>
+  </g>
+  <text x="52" y="196" fill="#ffffff" font-family="Sans" font-weight="900" font-size="52" letter-spacing="1">YouTube</text>
+  <text x="54" y="226" fill="#fda4af" font-family="Sans" font-weight="bold" font-size="18" letter-spacing="3">4K VİDEO • CANLI YAYIN • MÜZİK</text>
+  <rect x="54" y="244" width="190" height="6" rx="3" fill="#ff0033"/>
+</svg>

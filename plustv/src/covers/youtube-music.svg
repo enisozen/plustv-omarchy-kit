@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0308"/>
+      <stop offset="55%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#ff0033"/>
+    </linearGradient>
+    <radialGradient id="ytmGlow" cx="0.78" cy="0.28" r="0.58">
+      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.48"/>
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#ytmGlow)"/>
+  <circle cx="515" cy="125" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="18"/>
+  <circle cx="515" cy="125" r="95" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="8"/>
+  <circle cx="515" cy="125" r="55" fill="none" stroke="#ffffff" stroke-opacity="0.14" stroke-width="5"/>
+  <!-- YouTube Music Disc Badge -->
+  <g transform="translate(52, 60)">
+    <rect x="0" y="0" width="90" height="90" rx="24" fill="#ff0033" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <circle cx="45" cy="45" r="30" fill="none" stroke="#ffffff" stroke-width="5"/>
+    <polygon points="38,31 38,59 61,45" fill="#ffffff"/>
+  </g>
+  <text x="52" y="196" fill="#ffffff" font-family="Sans" font-weight="900" font-size="48" letter-spacing="1">YouTube Music</text>
+  <text x="54" y="226" fill="#fecdd3" font-family="Sans" font-weight="bold" font-size="18" letter-spacing="3">MÜZİK • VİDEO KLİPLER • CANLI PERFORMANS</text>
+  <rect x="54" y="244" width="190" height="6" rx="3" fill="#ffffff"/>
+</svg>

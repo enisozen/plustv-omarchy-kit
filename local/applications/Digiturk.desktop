@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Digiturk
+Comment=Digiturk Resmi Platformu
+Keywords=Digiturk;digitürk;beIN;beIN CONNECT;tv;
+Exec=omarchy-launch-webapp "https://www.digiturk.com.tr"
+Terminal=false
+Type=Application
+Icon=digiturk
+StartupNotify=true
+StartupWMClass=chrome-www.digiturk.com.tr__-Default

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Microsoft OneDrive
+Comment=Microsoft OneDrive
+Exec=omarchy-launch-webapp "https://www.office.com/launch/onedrive"
+Terminal=false
+Type=Application
+Icon=microsoft-onedrive
+StartupNotify=true
+StartupWMClass=chrome-www.office.com__launch_onedrive-Default

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=beIN CONNECT
+Comment=Digiturk beIN CONNECT Canlı TV, Dizi ve Film
+Keywords=beIN;beIN CONNECT;begin;begin connect;Digiturk;digitürk;tv;spor;
+Exec=omarchy-launch-webapp "https://www.beinconnect.com.tr"
+Terminal=false
+Type=Application
+Icon=bein-connect
+StartupNotify=true
+StartupWMClass=chrome-www.beinconnect.com.tr__-Default

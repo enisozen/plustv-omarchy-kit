@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2b0006"/>
+      <stop offset="55%" stop-color="#7f0012"/>
+      <stop offset="100%" stop-color="#e30613"/>
+    </linearGradient>
+    <radialGradient id="flare" cx="0.8" cy="0.3" r="0.6">
+      <stop offset="0%" stop-color="#ff8a00" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff8a00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#flare)"/>
+  <!-- Giant Digiturk Spiral Watermark on Right -->
+  <g transform="translate(490, 175)">
+    <circle cx="0" cy="0" r="145" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="26" stroke-dasharray="720 190"/>
+    <circle cx="0" cy="0" r="92" fill="none" stroke="#ffffff" stroke-opacity="0.16" stroke-width="20" stroke-dasharray="440 140"/>
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="14" stroke-dasharray="210 80"/>
+    <circle cx="0" cy="0" r="16" fill="#ffffff" fill-opacity="0.3"/>
+  </g>
+  <!-- Left Emblem -->
+  <g transform="translate(52, 62)">
+    <rect x="0" y="0" width="90" height="90" rx="24" fill="#ffffff"/>
+    <circle cx="45" cy="45" r="29" fill="none" stroke="#e30613" stroke-width="8" stroke-dasharray="140 45"/>
+    <circle cx="45" cy="45" r="15" fill="none" stroke="#e30613" stroke-width="6" stroke-dasharray="65 30"/>
+    <circle cx="45" cy="45" r="5" fill="#e30613"/>
+  </g>
+  <text x="52" y="196" fill="#ffffff" font-family="Sans" font-weight="900" font-size="54" letter-spacing="2">DIGITURK</text>
+  <text x="54" y="226" fill="#ffd6d9" font-family="Sans" font-weight="bold" font-size="18" letter-spacing="3.5">PREMİUM UYDU &amp; DİJİTAL PLATFORM</text>
+  <rect x="54" y="244" width="190" height="6" rx="3" fill="#ffffff"/>
+</svg>

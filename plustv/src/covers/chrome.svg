@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="50%" stop-color="#1c2541"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="chromeGlow" cx="0.78" cy="0.28" r="0.6">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <rect width="640" height="360" fill="url(#chromeGlow)"/>
+  <circle cx="515" cy="125" r="140" fill="none" stroke="#60a5fa" stroke-opacity="0.16" stroke-width="20"/>
+  <!-- Chrome multi-color ring badge -->
+  <g transform="translate(52, 60)">
+    <rect x="0" y="0" width="90" height="90" rx="24" fill="#ffffff"/>
+    <circle cx="45" cy="45" r="30" fill="none" stroke="#ea4335" stroke-width="12" stroke-dasharray="65 130" stroke-dashoffset="15"/>
+    <circle cx="45" cy="45" r="30" fill="none" stroke="#fbbc05" stroke-width="12" stroke-dasharray="65 130" stroke-dashoffset="-50"/>
+    <circle cx="45" cy="45" r="30" fill="none" stroke="#34a853" stroke-width="12" stroke-dasharray="65 130" stroke-dashoffset="-115"/>
+    <circle cx="45" cy="45" r="14" fill="#4285f4"/>
+  </g>
+  <text x="52" y="196" fill="#ffffff" font-family="Sans" font-weight="900" font-size="48" letter-spacing="0.5">Google Chrome</text>
+  <text x="54" y="226" fill="#bfdbfe" font-family="Sans" font-weight="bold" font-size="18" letter-spacing="3">WEB TARAYICI &amp; MEDYA MERKEZİ</text>
+  <rect x="54" y="244" width="210" height="6" rx="3" fill="#60a5fa"/>
+</svg>
