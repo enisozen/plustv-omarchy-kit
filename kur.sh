@@ -17,7 +17,7 @@ echo -e "\033[1;36m=============================================================
 
 # 1. Gerekli sistem paketlerini kontrol et ve eksikleri tamamla
 NEEDED_PKGS=()
-for pkg in qt6-base qt6-declarative qt6-svg qt6-wayland qrencode wtype jq; do
+for pkg in qt6-base qt6-declarative qt6-svg qt6-wayland qrencode wtype jq gcc make; do
   if ! pacman -Qi "$pkg" >/dev/null 2>&1; then
     NEEDED_PKGS+=("$pkg")
   fi
@@ -76,7 +76,7 @@ install -Dm755 "$HOME/Work/plustv/build/plustv" "$HOME/.local/bin/plustv"
 # Yardımcı sistem betiklerini (duvar kağıdı ve katman onarıcıları) yükle
 if [[ -d "$KIT_DIR/local/bin" ]]; then
   cp -a "$KIT_DIR/local/bin/." "$HOME/.local/bin/"
-  find "$HOME/.local/bin" -type f -exec sed -i "s|/home/enisozen|$HOME|g" {} + 2>/dev/null || true
+  find "$HOME/.local/bin" -type f -exec sed -E -i "s|/home/[^/\"'[:space:]]+|$HOME|g" {} + 2>/dev/null || true
   chmod +x "$HOME/.local/bin/"* || true
 fi
 
@@ -86,9 +86,9 @@ mkdir -p "$HOME/.config/hypr" "$HOME/.config/omarchy"
 cp -a "$KIT_DIR/config/hypr/." "$HOME/.config/hypr/"
 cp -a "$KIT_DIR/config/omarchy/." "$HOME/.config/omarchy/"
 
-# Farklı kullanıcı adına sahip başka bir PC'ye kurulursa /home/enisozen yollarını $HOME ile değiştir
-find "$HOME/.config/hypr" -type f -exec sed -i "s|/home/enisozen|$HOME|g" {} + 2>/dev/null || true
-find "$HOME/.config/omarchy" -type f -name "*.sh" -exec sed -i "s|/home/enisozen|$HOME|g" {} + 2>/dev/null || true
+# Farklı kullanıcı adına sahip başka bir PC'ye kurulursa /home/<kullanici> yollarını $HOME ile değiştir
+find "$HOME/.config/hypr" -type f -exec sed -E -i "s|/home/[^/\"'[:space:]]+|$HOME|g" {} + 2>/dev/null || true
+find "$HOME/.config/omarchy" -type f -name "*.sh" -exec sed -E -i "s|/home/[^/\"'[:space:]]+|$HOME|g" {} + 2>/dev/null || true
 find "$HOME/.config/omarchy/hooks" -type f -exec chmod +x {} + 2>/dev/null || true
 
 # 5. Tarayıcı donanım/Wayland bayraklarını yükle
@@ -102,7 +102,7 @@ mkdir -p "$HOME/.local/share/applications" "$HOME/.local/share/icons"
 cp -a "$KIT_DIR/local/applications/." "$HOME/.local/share/applications/"
 cp -a "$KIT_DIR/local/icons/." "$HOME/.local/share/icons/"
 
-find "$HOME/.local/share/applications" -maxdepth 1 -name "*.desktop" -type f -exec sed -i "s|/home/enisozen|$HOME|g" {} + 2>/dev/null || true
+find "$HOME/.local/share/applications" -maxdepth 1 -name "*.desktop" -type f -exec sed -E -i "s|/home/[^/\"'[:space:]]+|$HOME|g" {} + 2>/dev/null || true
 
 # 7. Plus TV temasını, saydamlık, imleç ve sistem markalamasını etkinleştir
 echo -e "\033[1;34m-> Plus TV teması, fare imleci ve sistem markalaması uygulanıyor...\033[0m"

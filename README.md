@@ -2,7 +2,11 @@
 
 An all-in-one Smart TV transformation kit for **Arch Linux** and **Omarchy (Hyprland Wayland compositor)**. It turns your PC / HTPC into a modern TV entertainment and cloud gaming hub with an integrated smartphone web remote control.
 
-![Plus TV & Omarchy Remote Control](https://raw.githubusercontent.com/enisozen/plustv-omarchy-kit/main/local/icons/plustv.svg)
+> 🇹🇷 Türkçe dokümantasyon için: **[BENIOKU.md](BENIOKU.md)**
+
+![Plus TV Desktop Preview](config/omarchy/themes/plus-tv/preview.png)
+
+![Plus TV Unlock Screen Preview](config/omarchy/themes/plus-tv/preview-unlock.png)
 
 ---
 

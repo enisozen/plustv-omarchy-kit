@@ -54,6 +54,12 @@ cp -a "$HOME/.local/share/applications/." "$KIT_DIR/local/applications/"
 chmod +x "$KIT_DIR/kur.sh" "$KIT_DIR/install.sh" "$KIT_DIR/yedek-guncelle.sh"
 [[ -d "$KIT_DIR/local/bin" ]] && chmod +x "$KIT_DIR/local/bin/"* || true
 
+# Normalize user home paths in exported config/local files for portability
+find "$KIT_DIR/config/hypr" -type f -exec sed -E -i "s|/home/[^/\"'[:space:]]+|/home/enisozen|g" {} + 2>/dev/null || true
+find "$KIT_DIR/config/omarchy" -type f -name "*.sh" -exec sed -E -i "s|/home/[^/\"'[:space:]]+|/home/enisozen|g" {} + 2>/dev/null || true
+find "$KIT_DIR/local/bin" -type f -exec sed -E -i "s|/home/[^/\"'[:space:]]+|/home/enisozen|g" {} + 2>/dev/null || true
+find "$KIT_DIR/local/applications" -maxdepth 1 -name "*.desktop" -type f -exec sed -E -i "s|/home/[^/\"'[:space:]]+|/home/enisozen|g" {} + 2>/dev/null || true
+
 # 7. Taşınabilir .tar.gz arşivini oluştur
 ARCHIVE_WORK="$HOME/Work/plustv-omarchy-kit.tar.gz"
 ARCHIVE_DL="$HOME/Downloads/plustv-omarchy-kit.tar.gz"

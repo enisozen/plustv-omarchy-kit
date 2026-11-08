@@ -1,16 +1,35 @@
 #!/bin/bash
-# Sync theme-specific screensaver branding when switching themes
+# Sync theme-specific screensaver and About branding when switching themes
 set -u
 
 THEME_SLUG="${1:-}"
+OMARCHY_DIR="${OMARCHY_PATH:-/usr/share/omarchy}"
+
 CURRENT_THEME_SCREENSAVER="$HOME/.local/state/omarchy/current/theme/screensaver.txt"
 USER_THEME_SCREENSAVER="$HOME/.config/omarchy/themes/$THEME_SLUG/screensaver.txt"
-TARGET="$HOME/.config/omarchy/branding/screensaver.txt"
+TARGET_SCREENSAVER="$HOME/.config/omarchy/branding/screensaver.txt"
 
+CURRENT_THEME_ABOUT="$HOME/.local/state/omarchy/current/theme/about.txt"
+USER_THEME_ABOUT="$HOME/.config/omarchy/themes/$THEME_SLUG/about.txt"
+TARGET_ABOUT="$HOME/.config/omarchy/branding/about.txt"
+
+mkdir -p "${TARGET_SCREENSAVER%/*}"
+
+# Sync screensaver.txt
 if [[ -f "$CURRENT_THEME_SCREENSAVER" ]]; then
-  mkdir -p "${TARGET%/*}"
-  cp "$CURRENT_THEME_SCREENSAVER" "$TARGET"
+  cp "$CURRENT_THEME_SCREENSAVER" "$TARGET_SCREENSAVER"
 elif [[ -n "$THEME_SLUG" && -f "$USER_THEME_SCREENSAVER" ]]; then
-  mkdir -p "${TARGET%/*}"
-  cp "$USER_THEME_SCREENSAVER" "$TARGET"
+  cp "$USER_THEME_SCREENSAVER" "$TARGET_SCREENSAVER"
+elif [[ -f "$OMARCHY_DIR/logo.txt" ]]; then
+  cp "$OMARCHY_DIR/logo.txt" "$TARGET_SCREENSAVER"
 fi
+
+# Sync about.txt (only themes with about.txt like sirinler override it; others use stock Omarchy icon)
+if [[ -f "$CURRENT_THEME_ABOUT" ]]; then
+  cp "$CURRENT_THEME_ABOUT" "$TARGET_ABOUT"
+elif [[ -n "$THEME_SLUG" && -f "$USER_THEME_ABOUT" ]]; then
+  cp "$USER_THEME_ABOUT" "$TARGET_ABOUT"
+elif [[ -f "$OMARCHY_DIR/icon.txt" ]]; then
+  cp "$OMARCHY_DIR/icon.txt" "$TARGET_ABOUT"
+fi
+rm -f "$HOME/.local/state/omarchy/windows/about.fit" 2>/dev/null || true
