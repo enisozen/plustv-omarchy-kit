@@ -4,6 +4,8 @@ An all-in-one Smart TV transformation kit for **Arch Linux** and **Omarchy (Hypr
 
 > 🇹🇷 Türkçe dokümantasyon için: **[BENIOKU.md](BENIOKU.md)**
 
+![Plus TV Interface Preview](config/omarchy/themes/plus-tv/preview-plustv.png)
+
 ![Plus TV Desktop Preview](config/omarchy/themes/plus-tv/preview.png)
 
 ![Plus TV Unlock Screen Preview](config/omarchy/themes/plus-tv/preview-unlock.png)

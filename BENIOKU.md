@@ -2,6 +2,8 @@
 
 Bu paket, Omarchy üzerinde oluşturduğumuz **Plus TV Akıllı TV & Medya Merkezi** sistemini, **Telefon Uzaktan Kumanda** modülünü, tüm **Hyprland / Omarchy özel ayarlarını**, **Plus TV & Digiturk temalarını**, **Özel Sinematik Duvar Kağıtlarını**, **Ekran Koruyucu Markalamalarını**, **Kilidi Aç (Plymouth) Kilit Ekranını** ve **12 medya platformu kısayolunu** içerir.
 
+![Plus TV Arayüzü Önizlemesi](config/omarchy/themes/plus-tv/preview-plustv.png)
+
 ![Plus TV Masaüstü Önizlemesi](config/omarchy/themes/plus-tv/preview.png)
 
 ---
